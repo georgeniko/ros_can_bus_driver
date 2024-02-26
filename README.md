@@ -15,8 +15,7 @@ who did the packing of these messages.
 For instance if we know that a variable is signed and 16 bit long, the union that we should
 use is the following:
 
-![alt text](https://github.com/georgeniko/ros_can_bus_driver/blob/main/evaluation.png?raw=true)
-------------------------
+![alt text](https://github.com/georgeniko/ros_can_bus_driver/blob/main/unpack.png?raw=true)
 
 Afterwards, we need to actually unpack the data. For this purpose I created some functions,
 since the same thing had to be done several times. Of course, we cannot use the same unpacking
@@ -77,7 +76,7 @@ can dummy). Finally in a third terminal we run the ros to can node. If we did ev
 we should see some traffic in the candump, that in closer examination is the communication
 from the mpc dummy. The next photo shows this example.
 
--------------------------------------------
+![alt text](https://github.com/georgeniko/ros_can_bus_driver/blob/main/evaluation.png?raw=true)
 
 For the can to ros node we will use 3 terminals as well. In the first one we should have the
 CAN and vcan0 initialized. In the second one we run the can to ros node and in a third one we
@@ -87,6 +86,6 @@ viously to send a message to the correct ID that is related to the topic we are 
 we did everything right, we should see that message in the echo. The following photo 
 shows this example.
 
-
+![alt text](https://github.com/georgeniko/ros_can_bus_driver/blob/main/evaluation2.png?raw=true)
 
 
