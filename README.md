@@ -15,6 +15,7 @@ who did the packing of these messages.
 For instance if we know that a variable is signed and 16 bit long, the union that we should
 use is the following:
 
+![alt text](https://github.com/georgeniko/ros_can_driver/blob/main/evaluation.png?raw=true)
 ------------------------
 
 Afterwards, we need to actually unpack the data. For this purpose I created some functions,
